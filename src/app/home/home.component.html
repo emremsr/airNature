@@ -1,0 +1,84 @@
+<div class="banner">
+  <div class="content">
+    <h1>Clean <span>Air</span> and Beautiful <span>Nature</span></h1>
+    <a routerLink="/menu">GET NOW <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+
+<div class="container mt-5 text-center justify-content-center align-content-center">
+  <div class="row">
+    <div class=" col-md-4 mt-5">
+      <div class="card text-white bg-success mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-tree"></i></h5>
+          <p class="card-text yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate at sequi,
+            maiores, eum tempore natus aliquam possimus nostrum, iure totam ad eveniet nam distinctio ea dolorum
+            voluptatibus? Incidunt, pariatur.</p>
+        </div>
+      </div>
+    </div>
+    <div class="boxer col-md-4 bg-white">
+      <div class="card text-success border-success border-3 mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-tree-fill"></i></h5>
+          <p class="card-text yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem id minus fugiat
+            recusandae facilis. Laborum assumenda qui quod harum amet impedit omnis enim? Consequuntur totam voluptate
+            unde. Consequatur eligendi perspiciatis delectus voluptatibus. Totam, incidunt dolor?</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-5">
+      <div class="card text-white bg-success mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><i class="bi bi-tree"></i></h5>
+          <p class="card-text yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis error voluptas nam
+            tempore corporis delectus possimus iure officiis voluptates iusto fugiat quisquam enim ex aut omnis, minima
+            quos? Expedita rem sed fugit..</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-7">
+      <img src="../../assets/images/sarmasik.jpg" class="img-fluid img-thumbnail border-0 rounded mx-auto d-block "
+        alt="">
+    </div>
+    <div class="col-md-5">
+      <h3 class="text-center text-black text-uppercase mt-5 text-success ">Green life</h3>
+      <p class="text-black yazi mt-5">Aurora or polar aurora are the natural radiations seen in the sky in the
+        polar
+        regions, resulting from the interaction of the earth's magnetic field and the charged particles from the Sun. In
+        northern latitudes, this effect is called the aurora borealis or northern lights. The formation of the aurora
+        australis (southern aurora) at southern latitudes has similar characteristics; however, it can be seen from
+        higher latitudes in Antarctica, South America and Australia. These radiations, usually observed at night, occur
+        predominantly in the ionosphere. This phenomenon commonly appears between 60 and 72 degrees north and south
+        latitudes, which falls within the arctic and antarctic polar circles. The probability of the aurora borealis
+        appearing increases as you get closer to the north magnetic pole. Auroras formed near the magnetic pole are
+        exactly 90 degrees; but from afar they illuminate the northern horizon with a greenish glow, sometimes a pale
+        red as if the sun were rising from an unusual direction. The aurora borealis often occurs at the solstices.
+        Auroras can be observed all over the earth and on other planets as well. The closer they are to the poles, the
+        more visible they are due to the longer duration of darkness and magnetic field.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <h2 class="text-uppercase text-center text-black-50">Most Favorite <span class="text-success">Trees</span></h2>
+    <div class="col-lg-3" *ngFor="let item of treeData;index as i">
+
+      <div *ngIf="i<=3">
+        <img class="img-fluid treeBox mt-5 mb-2" src="{{item.treeimg}}">
+        <h4 class="text-uppercase text-center text-success">{{item.treeName}}</h4>
+        <p class=" yazi">{{item.treeDetails}}</p>
+        <p class=" text-center">{{item.treePrice | currency:'EUR' }}</p>
+      </div>
+
+    </div>
+  </div>
+  <a class="btn btn-success btn1" routerLink="menu" role="button">For More <i class="bi bi-arrow-right"></i></a>
+</div>
