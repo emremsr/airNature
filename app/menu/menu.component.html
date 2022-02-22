@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let item of treeMenu">
+            <img class="img-fluid treeBox mt-5 mb-2" src="{{item.treeimg}}" >
+            <h2>{{item.treeName}}</h2>
+            <p class="yazi">{{item.treeDetails}}</p>
+            <p>{{item.treePrice | currency:'EUR'}}</p>
+            <a class="btn btn-success" [routerLink]="['/menu',item.id]" role="button">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
+        </div>
+    </div>
+</div>

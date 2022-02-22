@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 " *ngIf="treeData">
+      <img class="img-fluid treebox" src="{{treeData[0].treeimg}}" alt="">
+    </div>
+    <div class="col-lg-4" *ngIf="treeData">
+      <h2 class="text-center text-success">{{treeData[0].treeName}}</h2>
+      <p>{{treeData[0].treeDetails}}</p>
+      <a class="btn btn-success"  role="button">Buy Now &nbsp;
+        {{treeData[0].treePrice | currency:'EUR'}}
+      </a>
+    </div>
+  </div>
+</div>
